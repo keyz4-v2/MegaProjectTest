@@ -192,7 +192,7 @@
         background: linear-gradient(45deg,blue,violet);
     }
     .username, .password{
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
     .loginCard{
         height: 50vh;
@@ -200,7 +200,7 @@
     }
     .usernameBox,.passwordBox,.loginBtn{
         width: 90%;
-        height: 2.5rem;
+        height: 2.8rem;
     }
     .col3{
         padding-left: 3rem;
@@ -209,7 +209,7 @@
         padding-right: 1.5rem;
     }
     .loginBtn{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .col4{
         font-size: 0.8rem;
