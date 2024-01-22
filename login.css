@@ -1,0 +1,218 @@
+*{
+    margin: 0pxx;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.loginContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu0xpgRdKOntJjFg4IsCdYx0AIS2DDDVaAwA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+.bgVideoContainer{
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.loginCard{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 50vw;
+    border: 2px solid white;
+    backdrop-filter: blur(0.8rem);
+    border-radius: 15px;
+
+}
+.col1{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.usernameBox,.passwordBox{
+    border: 2px solid white;
+    border-radius: 25px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 3.5rem;
+    margin: 10px;
+    margin-left: 20px;
+    padding: 1rem;
+}
+.username, .password{
+    outline: none;
+    width: 80%;
+    height: 2.8rem;
+    border-radius: 25px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.inputBoximg{
+    height: 1.8rem;
+}
+::placeholder{
+    padding-left: 0.5rem;
+    color: white;
+}
+.col3{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
+}
+.col3 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.rememberMe:checked{
+    accent-color: black;
+}
+.forgotPassword:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+.col4{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+.col4 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.loginBtn{
+    background: transparent;
+    width: 80%;
+    height: 3rem;
+    border-radius: 25px;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    font-size: 1.3rem;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1rem;
+}
+.loginBtn:hover{
+    border: 2px solid black;
+}
+.registerRedirect{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.registerRedirectText{
+    margin-right: 5px;
+}
+.registerRedirectLink:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.3rem; 
+}
+
+@media screen and (min-width:1100px) {
+    .loginCard{
+        width: 40vw;
+    }
+    .col3{
+        padding-left: 4rem;
+    }
+}
+@media screen and (min-width:710px) and (max-width:1099px) {
+    .username, .password{
+        font-size: 1.2rem;
+    }
+    .loginCard{
+        height: 55vh;
+        width: 55vw;
+    }
+    .col3{
+        padding-left: 4rem;
+    }
+}
+@media screen and (min-width:500px) and (max-width:709px) {
+    .loginContainer{
+        background: linear-gradient(45deg,red,violet);
+    }
+    .username, .password{
+        font-size: 1.2rem;
+    }
+    .loginCard{
+        height: 55vh;
+        width: 75vw;
+    }
+    .col3{
+        padding-left: 3rem;
+    }
+}
+@media screen and (min-width:200px) and (max-width:499px) {
+    .loginContainer{
+        background: linear-gradient(45deg,blue,violet);
+    }
+    .username, .password{
+        font-size: 0.8rem;
+    }
+    .loginCard{
+        height: 50vh;
+        width: 90vw;
+    }
+    .usernameBox,.passwordBox,.loginBtn{
+        width: 90%;
+        height: 2.5rem;
+    }
+    .col3{
+        padding-left: 3rem;
+        font-size: 0.6rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .loginBtn{
+        font-size: 1rem;
+    }
+    .col4{
+        font-size: 0.8rem;
+    }
+}
+
